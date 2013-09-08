@@ -95,6 +95,11 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
 
+# LCD density backup
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf 
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
