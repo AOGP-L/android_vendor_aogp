@@ -91,6 +91,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
+# Backup - Temasek
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/98-temasek.sh:system/addon.d/98-temasek.sh
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
