@@ -3,6 +3,7 @@ PRODUCT_BRAND ?= cyanogenmod
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
+TARGET_NO_SEPARATE_RECOVERY := true
 #Set TeamUB tag
 TARGET_UNOFFICIAL_BUILD_ID := "Team_(UB)"
 
