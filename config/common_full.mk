@@ -34,4 +34,6 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in AOGP
 PRODUCT_PACKAGES += \
-    vim
+    vim \
+    zip \
+    unrar
