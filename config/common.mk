@@ -308,17 +308,23 @@ ifeq ($(CM_BUILDTYPE), RELEASE)
     endif
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(CM_BUILD)
+		           MOD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(CM_EXTRAVERSION)-$(CM_BUILD)
     else
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(CM_BUILD)
+		           MOD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(CM_EXTRAVERSION)-$(CM_BUILD)
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.cm.releasetype=$(CM_BUILDTYPE) \
-  ro.modversion=$(CM_VERSION) \
+  ro.modversion=$(MOD_VERSION) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
+  
+#lets kill goo.im as its a liar
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.goo.developerid=nullDev
 
 -include vendor/cm-priv/keys/keys.mk
 
