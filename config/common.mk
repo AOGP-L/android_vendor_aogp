@@ -140,6 +140,15 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# Adobe Flash
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/apk/install_flash_player_kk.apk:system/app/install_flash_player_kk.apk
+
+# Nova Launcher
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/apk/NovaLauncher.apk:system/priv-app/NovaLauncher.apk \
+	vendor/cm/prebuilt/common/apk/TeslaUnread.apk:system/priv-app/TeslaUnread.apk
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
