@@ -1,16 +1,16 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common AOGP stuff
+$(call inherit-product, vendor/aogp/config/common.mk)
 
 # Bring in all video files
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
+# Include AOGP audio files
+include vendor/aogp/config/aogp_audio.mk
 
-# Include CM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Include AOGP LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aogp/overlay/dictionaries
 
-# Optional CM packages
+# Optional AOGP packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
@@ -32,6 +32,6 @@ PRODUCT_PACKAGES += \
     libvideoeditor_videofilters \
     libvideoeditorplayer
 
-# Extra tools in CM
+# Extra tools in AOGP
 PRODUCT_PACKAGES += \
     vim
