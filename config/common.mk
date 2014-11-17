@@ -229,7 +229,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aogp/overlay/common
 
 
 #added AOGP extras
--include vendor/cm/config/aogp_extras.mk
+-include vendor/aogp/config/aogp_extras.mk
 
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
