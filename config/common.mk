@@ -75,7 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 endif
 
 # Copy over the changelog to the device
@@ -330,6 +330,10 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
   endif
 endif
 endif
+
+
+#added AOGP extras
+-include vendor/cm/config/aogp_extras.mk
 
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
