@@ -149,6 +149,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/cm/prebuilt/common/apk/NovaLauncher.apk:system/priv-app/NovaLauncher.apk \
 	vendor/cm/prebuilt/common/apk/TeslaUnread.apk:system/priv-app/TeslaUnread.apk
+    
+# Team (UB) Wallpapers
+PRODUCT_PACKAGES += \
+	TUBwallpapers    
 
 # Required CM packages
 PRODUCT_PACKAGES += \
@@ -168,7 +172,6 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     CMFileManager \
     LockClock \
     CMUpdater \
