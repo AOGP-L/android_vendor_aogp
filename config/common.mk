@@ -1,6 +1,7 @@
 PRODUCT_BRAND ?= aogp
 
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -55,8 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1 \
-		persist.sys.root_access=3
+    ro.build.selinux=1
 
 # Disable multithreaded dexopt by default
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -98,8 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # AOGP-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/aogp/prebuilt/common/etc/init.local.rc:root/init.aogp.rc \
-	 	external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
+    vendor/aogp/prebuilt/common/etc/init.local.rc:root/init.aogp.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
