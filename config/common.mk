@@ -70,6 +70,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# LAZY DEXOPT
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.lazy.dexopt=true
+
 # Disable multithreaded dexopt by default
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dalvik.multithread=false
