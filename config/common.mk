@@ -166,6 +166,10 @@ PRODUCT_COPY_FILES += \
 # Team (UB) Wallpapers
 PRODUCT_PACKAGES += \
 	TUBwallpapers    
+    
+# Team (UB) OpenDelta
+PRODUCT_PACKAGES += \
+	OpenDelta    
 
 # Required CM packages
 PRODUCT_PACKAGES += \
