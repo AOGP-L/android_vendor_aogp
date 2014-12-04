@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
     Basic \
     libemoji
 
+# Proprietary latinime lib needed for Keyboard swyping
+PRODUCT_COPY_FILES += \
+    vendor/aogp/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
 # Custom AOGP packages
 PRODUCT_PACKAGES += \
     Trebuchet \
