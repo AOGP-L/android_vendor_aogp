@@ -190,6 +190,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMFileManager \
+    Eleven \
     LockClock \
     CMUpdater \
     CMAccount \
