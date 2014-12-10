@@ -181,7 +181,9 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Trebuchet \
-    AudioFX \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf \
     CMFileManager \
     LockClock \
     CMUpdater \
