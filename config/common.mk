@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     AudioFX \
     CMFileManager \
-    Eleven \
     LockClock \
     CMUpdater \
     CMAccount \
