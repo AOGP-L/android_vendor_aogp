@@ -31,8 +31,11 @@ else
     AOGP_VERSION := "$(TARGET_PRODUCT)-Lollipop-$(AOGP_BUILDTYPE)"-$(shell date +%Y%m%d-%H%M)
 endif
 
+AOGP_DISPLAY_VERSION := $(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AOGP_VERSION) \
     ro.aogp.version=$(VERSION)-$(AOGP_BUILDTYPE)
 
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.aogp.display.version=$(AOGP_DISPLAY_VERSION) 
