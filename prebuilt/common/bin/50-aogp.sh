@@ -1,6 +1,6 @@
 #!/sbin/sh
 # 
-# /system/addon.d/50-cm.sh
+# /system/addon.d/50-aogp.sh
 # During a CM11 upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #

@@ -14,8 +14,8 @@
      limitations under the License.
 -->
 
-<!-- This feature shows that this is device features CM NFC enhancements -->
+<!-- This feature shows that this is device features AOGP NFC enhancements -->
 <permissions>
-    <feature name="com.cyanogenmod.nfc.enhanced" />
+    <feature name="com.aogp.nfc.enhanced" />
 </permissions>
 
