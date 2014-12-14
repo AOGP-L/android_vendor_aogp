@@ -109,7 +109,7 @@ PRODUCT_COPY_FILES += \
 
 # fstrim support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim
+    vendor/aogp/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim
 
 # userinit support
 PRODUCT_COPY_FILES += \
