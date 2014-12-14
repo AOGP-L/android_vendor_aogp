@@ -170,7 +170,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMUpdater \
     CMAccount \
-    CMHome
+    CMHome \
+    DeviceControl 
 
 # AOGP Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
