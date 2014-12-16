@@ -64,10 +64,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.lazy.dexopt=true
 
-# Disable multithreaded dexopt by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.dalvik.multithread=false
-
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
