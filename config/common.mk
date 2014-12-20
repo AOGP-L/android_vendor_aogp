@@ -132,10 +132,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aogp/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
-# Proprietary latinime lib needed for Keyboard swyping
-PRODUCT_COPY_FILES += \
-    vendor/aogp/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-
 # Custom AOGP packages
 PRODUCT_PACKAGES += \
     Launcher3 \
