@@ -66,6 +66,11 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# HFM Files
+PRODUCT_COPY_FILES += \
+    vendor/aogp/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
+    vendor/aogp/prebuilt/common/etc/hosts.og:system/etc/hosts.og
+
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     vendor/aogp/CHANGELOG.mkdn:system/etc/CHANGELOG-AOGP.txt
