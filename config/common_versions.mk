@@ -32,11 +32,13 @@ else
 endif
 
 AOGP_DISPLAY_VERSION := $(VERSION)
+AOGP_DISPLAY_BUILDSTATUS := $(AOGP_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AOGP_VERSION) \
     ro.aogp.version=$(VERSION)-$(AOGP_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.aogp.display.version=$(AOGP_DISPLAY_VERSION) 
+ro.aogp.display.version=$(AOGP_DISPLAY_VERSION) \
+ro.aogp.display.buildstatus=$(AOGP_DISPLAY_BUILDSTATUS)
 
