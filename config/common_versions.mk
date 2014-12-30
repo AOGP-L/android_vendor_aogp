@@ -16,6 +16,9 @@ endif
 ifdef AOGP_RELEASE
     AOGP_BUILDTYPE := RELEASE
 endif
+ifdef AOGP_MONTHLY
+    AOGP_BUILDTYPE := MONTHLY
+endif
 # Set Unofficial if no buildtype set (Buildtype should ONLY be set by AOGP Devs!)
 ifdef AOGP_BUILDTYPE
 else
