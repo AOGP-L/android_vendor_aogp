@@ -1,3 +1,39 @@
 Android Open Grand Project
 ==========================
 
+AOGP Lollipop 5.0.2 - v1.2
+
+- Shortcut Action Icons
+- Left handed navbar during landscape mode
+- Materialize volume panel in/out animation
+- [ActivityManager] Reset ActivityRecord's waitingVisible
+- Per-app performance profiles
+- CPU Info Overlay
+- Long click support
+- [ActivityManager] Fix NPE when start activity
+- Notifications: Material Dark
+- Status bar notification: Use Material icons for missed calls
+- ResolverActivity: fix null pointer exception
+- Buttons: set HOME wake key defaults as disabled
+
+AOGP Lollipop 5.0.2 - v1.0
+- Toast Animation
+- Adblocker
+- Ability to change the color in Battery Saver Mode
+- Wakelock Blocker 
+- ListView Animations
+- Fix for screenshot animation glitch in portrait 
+- Speed Up Animations
+- Lollipop BatteryBar
+- Disable Immersive Messages
+- MediaScanner behavior on boot
+- Contacts/Dialer/InCallUI: Dark theme
+- Frameworks: Material Black
+- Fix memory leak in ColorFade 
+- Speed up Statusbar
+- Speed Up Recents Menu
+- AOKP Custom System Animations
+- Fix Quick Settings for MSim
+- StatusBar Battery Icon Options
+- SuperSU Via Settings 
+- Bug fix and source updates from cyanogenmod
