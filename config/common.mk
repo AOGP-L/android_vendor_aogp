@@ -33,6 +33,10 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/aogp/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 # HFM Files
 PRODUCT_COPY_FILES += \
     vendor/aogp/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
