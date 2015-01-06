@@ -118,8 +118,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    CMAccount \
-    CMHome
+    CMHome \
+    MsimEnDe
 
 # AOGP Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
