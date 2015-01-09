@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     LockClock \
     CMHome \
-    MsimEnDe
+    MsimEnDe \
+    ScreenRecorder
 
 # AOGP Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
